@@ -12,16 +12,7 @@ import vanillaIcecreamImg from '@/assets/vanilla-icecream.jpg';
 import chocolateIcecreamImg from '@/assets/chocolate-icecream.jpg';
 import strawberryIcecreamImg from '@/assets/strawberry-icecream.jpg';
 
-export interface MenuItem {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  image: string;
-  category: 'dishes' | 'desserts' | 'drinks' | 'icecream';
-}
-
-export const menuItems: MenuItem[] = [
+export const menuItems = [
   // Dishes
   {
     id: '1',

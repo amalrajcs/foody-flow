@@ -1,29 +1,11 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState } from 'react';
 
-export interface CartItem {
-  id: string;
-  name: string;
-  price: number;
-  image: string;
-  quantity: number;
-}
+const CartContext = createContext(undefined);
 
-interface CartContextType {
-  cart: CartItem[];
-  addToCart: (item: Omit<CartItem, 'quantity'>) => void;
-  removeFromCart: (id: string) => void;
-  updateQuantity: (id: string, quantity: number) => void;
-  clearCart: () => void;
-  getTotalAmount: () => number;
-  getItemCount: () => number;
-}
+export const CartProvider = ({ children }) => {
+  const [cart, setCart] = useState([]);
 
-const CartContext = createContext<CartContextType | undefined>(undefined);
-
-export const CartProvider = ({ children }: { children: ReactNode }) => {
-  const [cart, setCart] = useState<CartItem[]>([]);
-
-  const addToCart = (item: Omit<CartItem, 'quantity'>) => {
+  const addToCart = (item) => {
     setCart((prevCart) => {
       const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
       if (existingItem) {
@@ -37,11 +19,11 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     });
   };
 
-  const removeFromCart = (id: string) => {
+  const removeFromCart = (id) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
-  const updateQuantity = (id: string, quantity: number) => {
+  const updateQuantity = (id, quantity) => {
     if (quantity <= 0) {
       removeFromCart(id);
       return;

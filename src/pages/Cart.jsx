@@ -9,7 +9,7 @@ const Cart = () => {
   const { cart, removeFromCart, updateQuantity, getTotalAmount } = useCart();
   const total = getTotalAmount();
 
-  const handleRemove = (name: string, id: string) => {
+  const handleRemove = (name, id) => {
     removeFromCart(id);
     toast.success(`${name} removed from cart`);
   };
