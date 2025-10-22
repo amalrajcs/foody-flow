@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success('Message sent! We\'ll get back to you soon.');
   };

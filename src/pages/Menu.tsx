@@ -4,7 +4,7 @@ import { menuItems } from '@/data/menuItems';
 import { Button } from '@/components/ui/button';
 
 const Menu = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState<string>('all');
 
   const categories = [
     { id: 'all', label: 'All Items' },

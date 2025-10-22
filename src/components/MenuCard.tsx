@@ -5,7 +5,15 @@ import { useCart } from '@/context/CartContext';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
-const MenuCard = ({ id, name, description, price, image }) => {
+interface MenuCardProps {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+}
+
+const MenuCard = ({ id, name, description, price, image }: MenuCardProps) => {
   const { addToCart } = useCart();
   const navigate = useNavigate();
 
