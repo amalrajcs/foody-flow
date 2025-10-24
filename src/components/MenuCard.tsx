@@ -35,7 +35,7 @@ const MenuCard = ({ id, name, description, price, image }: MenuCardProps) => {
       <CardContent className="p-4">
         <h3 className="font-semibold text-lg mb-1">{name}</h3>
         <p className="text-sm text-muted-foreground mb-2 line-clamp-2">{description}</p>
-        <p className="text-xl font-bold text-primary">${price.toFixed(2)}</p>
+        <p className="text-xl font-bold text-primary">₹ {price.toFixed(2)}</p>
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Button

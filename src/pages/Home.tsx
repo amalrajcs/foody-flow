@@ -1,18 +1,19 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Truck, Clock, ShieldCheck } from 'lucide-react';
+import BgImg from '../assets/bg-hero.jpg'
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className=" relative py-20 md:py-32">
-        <div className="py-10 container mx-auto px-4 bg-[url('/img/your-image.jpg')]">
+      <section className=" relative py-20 md:py-32 bg-cover bg-center" style={{ backgroundImage: `url(${BgImg})` }}>
+        <div className="py-8 container mx-auto px-4" >
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Delicious Food, Delivered Fresh
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+            <p className="text-lg md:text-xl text-white text-muted-foreground mb-8">
               Explore our amazing menu of dishes, desserts, drinks, and ice cream. 
               Order now and enjoy restaurant-quality food at home!
             </p>
