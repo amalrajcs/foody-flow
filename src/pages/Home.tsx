@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-background to-accent/10 py-20 md:py-32">
-        <div className="container mx-auto px-4">
+      <section className=" relative py-20 md:py-32">
+        <div className="py-10 container mx-auto px-4 bg-[url('/img/your-image.jpg')]">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Delicious Food, Delivered Fresh
@@ -24,7 +24,7 @@ const Home = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto hover:bg-orange-500">
                   Contact Us
                 </Button>
               </Link>
@@ -36,7 +36,7 @@ const Home = () => {
       {/* Features Section */}
       <section className="py-16 bg-card">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose FoodHub?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose FoodyFlow?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 rounded-lg hover:bg-secondary/50 transition-colors animate-fade-in">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">

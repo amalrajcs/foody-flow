@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
-              FoodHub
+              FoodyFlow
             </h3>
             <p className="text-muted-foreground text-sm">
               Delicious food delivered to your doorstep. Fresh, fast, and always tasty!
@@ -41,15 +41,15 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>+1 234 567 8900</span>
+                <span>+91 7010594798</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>hello@foodhub.com</span>
+                <span>amalrajcs712@gmail.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>123 Food Street, Tasty City</span>
+                <span>Main Rd, Vellore, Tamilnadu</span>
               </li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} FoodHub. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} FoodyFlow. All rights reserved.</p>
         </div>
       </div>
     </footer>

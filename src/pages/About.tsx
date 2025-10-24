@@ -6,7 +6,7 @@ const About = () => {
     <div className="min-h-screen py-12">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About FoodHub</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About FoodyFlow</h1>
           <p className="text-lg text-muted-foreground">
             Your trusted partner for delicious food delivery
           </p>
@@ -16,7 +16,7 @@ const About = () => {
           <CardContent className="p-8">
             <h2 className="text-2xl font-bold mb-4">Our Story</h2>
             <p className="text-muted-foreground mb-4">
-              FoodHub was founded with a simple mission: to bring restaurant-quality food
+              FoodyFlow was founded with a simple mission: to bring restaurant-quality food
               directly to your doorstep. We believe that everyone deserves access to
               delicious, fresh meals without the hassle of cooking or dining out.
             </p>

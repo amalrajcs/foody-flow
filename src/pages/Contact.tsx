@@ -47,7 +47,7 @@ const Contact = () => {
                   <Input
                     id="contact-phone"
                     type="tel"
-                    placeholder="+1 234 567 8900"
+                    placeholder="+91 9876543210"
                   />
                 </div>
                 <div>
@@ -75,7 +75,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+1 234 567 8900</p>
+                    <p className="text-muted-foreground">+91 7010594798</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Mon-Sun: 24/7 Available
                     </p>
@@ -92,7 +92,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">hello@foodhub.com</p>
+                    <p className="text-muted-foreground">amalrajcs712@gmail.com</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       We'll respond within 24 hours
                     </p>
@@ -110,8 +110,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-muted-foreground">
-                      123 Food Street<br />
-                      Tasty City, TC 12345
+                      Main Rd, Vellore - 632 002
                     </p>
                   </div>
                 </div>
